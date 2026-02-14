@@ -25,8 +25,8 @@ export default function App() {
       }
       {isLoginView===false &&
       <div className='login-container'>
-        <h2>Register for a new account</h2>
-        <p>If you have account already <label onClick={()=>switchView()}>Sign in</label></p>
+        <h2 className='para'>Register for a new account</h2>
+        <p className='para'>If you have account already <label onClick={()=>switchView()}>Sign in</label></p>
       </div>
       }
     </div>
