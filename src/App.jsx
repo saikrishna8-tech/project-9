@@ -26,6 +26,13 @@ export default function App() {
       {isLoginView===false &&
       <div className='login-container'>
         <h2 className='para'>Register for a new account</h2>
+        <div className='input-group'>
+          <img className='left-icon' src={IMGURL+"message.jpg"}alt=""/>
+          <input type='text' placeholder='Enter a emailID'/>
+        </div>
+        <div className='input-group'>
+          <input type='{toggle password' placeholder='Set a valid password'/>
+        </div>
         <p className='para'>If you have account already <label onClick={()=>switchView()}>Sign in</label></p>
       </div>
       }

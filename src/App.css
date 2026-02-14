@@ -1,109 +1,108 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-.app .login-container label{
-  cursor: pointer;
-}
-
-.app .login-container{
-  background: #fff;
-  border-radius: 10px;
-  width: 400px;
-  padding: 20px;
-  box-shadow: 0 10px 20px #121213;
+/* Full Page Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.app .login-container h2{
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.app{
-  height: 100%;
-  background: linear-gradient(90deg, #3af202, #04f257);
-  border-radius: 20px;
-  height: 100%;
+/* Main Wrapper */
+.app {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.app .login-container .input-group,
-.app .login-container .input-group
-{
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative;
-}
-.app .login-container .input-group img,
-.app .login-container .input-group img
-{
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.app .login-container .input-group .left-icon,
-.app .login-container .input-group .left-icon
-{
-    left: 5px;
-}
-.app .login-container .input-group .right-icon,
-.app .login-container .input-group .right-icon
-{
-    right: 5px;
-    cursor: pointer;
-}
-.app .login-container .input-group input,
-.app .login-container .input-group input
-{
-    width: 100%;
-    height: 45px;
-    border: none;
-    background: #f2f2f2;
-    padding: 0 25px;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-.app .login-container .forgot-password{
-    width: 100%;
-    text-align: right;
-    padding-bottom: 20px;
-}
-.app .login-container .forgot-password label,
-.app .login-container p label,
-.app .login-container p label
-{
-    cursor: pointer;
-    font-weight: bold;
-}
-.app .login-container button,
-.app .login-container button
-{
-    border: none;
-    height: 40px;
-    background: #1c1c1e;
-    color: black;
-    border-radius: 10px;
-}
-.app .login-container button:hover,
-.app .login-container button:hover
-{
-    cursor: pointer;
-    background: #363636;
-}
-.card {
-  padding: 2em;
+/* Card Container */
+.login-container {
+  width: 350px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
-.read-the-docs {
-  color: #888;
+/* Heading */
+.para {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
-.para{
-  color: black;
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Left Icon */
+.left-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+/* Input Field */
+input {
+  width: 85%;
+  padding: 12px 12px 12px 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #f0f0f0;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px #ffffff80;
+}
+
+/* Link Style */
+label {
+  color: #ffd369;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+label:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Button (Optional if you add one later) */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
